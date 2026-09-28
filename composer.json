@@ -1,11 +1,46 @@
 {
   "name": "wexample/symfony-remote-demo",
-  "version": "1.0.1",
+  "description": "Demo remotes showing every state on the symfony-remote-ds screen",
   "type": "library",
   "license": "MIT",
+  "version": "1.0.1",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyRemoteDemo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wexample\\SymfonyRemoteDemo\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "weeger",
+      "email": "romain.weeger@wexample.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.5",
+    "wexample/symfony-helpers": "*",
+    "wexample/symfony-remote": "*",
+    "wexample/symfony-remote-ds": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "extra": {
+    "install": {
+      "bundle_env": "all"
     }
   }
 }

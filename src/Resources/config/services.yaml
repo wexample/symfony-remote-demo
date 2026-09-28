@@ -1,0 +1,38 @@
+# Four remotes, one per thing the screen must show: an answering service, a
+# failing one, one missing its settings, and a slow one that holds only its row.
+services:
+    _defaults:
+        autoconfigure: true
+        public: false
+
+    wexample_symfony_remote_demo.remote.up:
+        class: Wexample\SymfonyRemoteDemo\Remote\DemoRemote
+        arguments:
+            $key: demo_up
+            $label: Demo — answering service
+            $state: !php/enum Wexample\SymfonyRemote\Enum\RemoteState::Up
+
+    wexample_symfony_remote_demo.remote.down:
+        class: Wexample\SymfonyRemoteDemo\Remote\DemoRemote
+        arguments:
+            $key: demo_down
+            $label: Demo — failing service
+            $state: !php/enum Wexample\SymfonyRemote\Enum\RemoteState::Down
+            $message: 'API responded with HTTP 503: service unavailable'
+
+    wexample_symfony_remote_demo.remote.unconfigured:
+        class: Wexample\SymfonyRemoteDemo\Remote\DemoRemote
+        arguments:
+            $key: demo_unconfigured
+            $label: Demo — missing settings
+            $state: !php/enum Wexample\SymfonyRemote\Enum\RemoteState::Unconfigured
+            $message: 'Missing: base_url, api_key.'
+
+    wexample_symfony_remote_demo.remote.slow:
+        class: Wexample\SymfonyRemoteDemo\Remote\DemoRemote
+        arguments:
+            $key: demo_slow
+            $label: Demo — slow service
+            $state: !php/enum Wexample\SymfonyRemote\Enum\RemoteState::Up
+            $message: Answers after two seconds.
+            $delay: 2.0
