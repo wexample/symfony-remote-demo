@@ -1,0 +1,7 @@
+domain: symfony-remote-demo.wex
+global:
+  name: symfony-remote-demo
+  type: php-package
+  version: 1.0.0
+wex:
+  version: 6.0.136
