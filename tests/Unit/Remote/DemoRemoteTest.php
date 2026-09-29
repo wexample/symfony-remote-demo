@@ -4,7 +4,7 @@ namespace Wexample\SymfonyRemoteDemo\Tests\Unit\Remote;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Yaml\Yaml;
-use Wexample\SymfonyRemote\Enum\RemoteState;
+use Wexample\PhpRemote\Enum\RemoteState;
 use Wexample\SymfonyRemoteDemo\Remote\DemoRemote;
 
 class DemoRemoteTest extends TestCase

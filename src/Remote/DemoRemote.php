@@ -2,9 +2,9 @@
 
 namespace Wexample\SymfonyRemoteDemo\Remote;
 
-use Wexample\SymfonyRemote\Class\RemoteStatus;
-use Wexample\SymfonyRemote\Enum\RemoteState;
-use Wexample\SymfonyRemote\Interface\RemoteInterface;
+use Wexample\PhpRemote\Class\RemoteStatus;
+use Wexample\PhpRemote\Enum\RemoteState;
+use Wexample\PhpRemote\Interface\RemoteInterface;
 
 /**
  * A remote answering a fixed state, after an optional delay, so the showcase

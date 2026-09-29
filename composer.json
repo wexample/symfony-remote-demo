@@ -24,7 +24,7 @@
     "php": ">=8.5",
     "wexample/symfony-helpers": "*",
     "wexample/symfony-remote": "*",
-    "wexample/symfony-remote-ds": "*"
+    "wexample/symfony-remote-ds": ">=2.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "*"
