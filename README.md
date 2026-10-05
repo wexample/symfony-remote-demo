@@ -1,6 +1,6 @@
 # symfony-remote-demo
 
-Version: 2.0.2
+Version: 2.0.3
 
 Demo remotes showing every state on the symfony-remote-ds screen
 
@@ -26,7 +26,7 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 ## Dependencies
 
 - php: >=8.5
-- wexample/symfony-helpers: >=14.0.0
+- wexample/symfony-helpers: >=15.0.0
 - wexample/symfony-remote: >=2.0.0
 - wexample/symfony-remote-ds: >=3.0.0
 
