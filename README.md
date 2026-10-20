@@ -1,6 +1,6 @@
 # symfony-remote-demo
 
-Version: 2.0.6
+Version: 2.0.7
 
 Demo remotes showing every state on the symfony-remote-ds screen
 
@@ -24,7 +24,7 @@ The suite includes packages for configuration management, file handling, prompts
 ## Dependencies
 
 - php: >=8.5
-- wexample/symfony-helpers: >=17.0.0
+- wexample/symfony-helpers: >=18.0.0
 - wexample/symfony-remote: >=2.0.0
 - wexample/symfony-remote-ds: >=3.0.0
 
