@@ -1,6 +1,6 @@
 # symfony-remote-demo
 
-Version: 2.0.9
+Version: 2.0.10
 
 Demo remotes showing every state on the symfony-remote-ds screen
 
